@@ -33,5 +33,12 @@ namespace PoldyCv
             fr.Show();
             this.Hide();
         }
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+            formGirisYap fr = new formGirisYap();
+            fr.Show();
+            this.Hide();
+        }
     }
 }
