@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formBasvur));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtAd = new System.Windows.Forms.TextBox();
-            this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.txtMeslek = new System.Windows.Forms.TextBox();
-            this.txtPosta = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.picProfile = new System.Windows.Forms.PictureBox();
-            this.btnCvOlustur = new System.Windows.Forms.Button();
-            this.btnCvDuzenle = new System.Windows.Forms.Button();
-            this.btnCvIndir = new System.Windows.Forms.Button();
             this.mskTel = new System.Windows.Forms.MaskedTextBox();
+            this.btnCvIndir = new System.Windows.Forms.Button();
+            this.btnCvDuzenle = new System.Windows.Forms.Button();
+            this.btnCvOlustur = new System.Windows.Forms.Button();
+            this.picProfile = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPosta = new System.Windows.Forms.TextBox();
+            this.txtMeslek = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
             this.grafikDepartman = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -78,121 +78,14 @@
             this.panel1.Size = new System.Drawing.Size(412, 538);
             this.panel1.TabIndex = 0;
             // 
-            // txtAd
+            // mskTel
             // 
-            this.txtAd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAd.Location = new System.Drawing.Point(131, 209);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(231, 36);
-            this.txtAd.TabIndex = 1;
-            // 
-            // txtSoyad
-            // 
-            this.txtSoyad.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoyad.Location = new System.Drawing.Point(131, 251);
-            this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(231, 36);
-            this.txtSoyad.TabIndex = 2;
-            // 
-            // txtMeslek
-            // 
-            this.txtMeslek.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMeslek.Location = new System.Drawing.Point(131, 293);
-            this.txtMeslek.Name = "txtMeslek";
-            this.txtMeslek.Size = new System.Drawing.Size(231, 36);
-            this.txtMeslek.TabIndex = 3;
-            // 
-            // txtPosta
-            // 
-            this.txtPosta.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPosta.Location = new System.Drawing.Point(131, 335);
-            this.txtPosta.Name = "txtPosta";
-            this.txtPosta.Size = new System.Drawing.Size(231, 36);
-            this.txtPosta.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 216);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ad:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 258);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 29);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Soyad:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 300);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 29);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Meslek:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 342);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 29);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "E-Posta:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 384);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 29);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Telefon:";
-            // 
-            // picProfile
-            // 
-            this.picProfile.Image = ((System.Drawing.Image)(resources.GetObject("picProfile.Image")));
-            this.picProfile.Location = new System.Drawing.Point(167, 61);
-            this.picProfile.Name = "picProfile";
-            this.picProfile.Size = new System.Drawing.Size(154, 129);
-            this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProfile.TabIndex = 10;
-            this.picProfile.TabStop = false;
-            // 
-            // btnCvOlustur
-            // 
-            this.btnCvOlustur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(170)))), ((int)(((byte)(242)))));
-            this.btnCvOlustur.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCvOlustur.ForeColor = System.Drawing.Color.White;
-            this.btnCvOlustur.Location = new System.Drawing.Point(17, 466);
-            this.btnCvOlustur.Name = "btnCvOlustur";
-            this.btnCvOlustur.Size = new System.Drawing.Size(118, 40);
-            this.btnCvOlustur.TabIndex = 6;
-            this.btnCvOlustur.Text = "CV Oluştur";
-            this.btnCvOlustur.UseVisualStyleBackColor = false;
-            // 
-            // btnCvDuzenle
-            // 
-            this.btnCvDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(211)))), ((int)(((byte)(48)))));
-            this.btnCvDuzenle.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCvDuzenle.ForeColor = System.Drawing.Color.Black;
-            this.btnCvDuzenle.Location = new System.Drawing.Point(141, 466);
-            this.btnCvDuzenle.Name = "btnCvDuzenle";
-            this.btnCvDuzenle.Size = new System.Drawing.Size(118, 40);
-            this.btnCvDuzenle.TabIndex = 7;
-            this.btnCvDuzenle.Text = "CV Düzenle";
-            this.btnCvDuzenle.UseVisualStyleBackColor = false;
+            this.mskTel.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTel.Location = new System.Drawing.Point(131, 377);
+            this.mskTel.Mask = "(999) 000-0000";
+            this.mskTel.Name = "mskTel";
+            this.mskTel.Size = new System.Drawing.Size(231, 36);
+            this.mskTel.TabIndex = 5;
             // 
             // btnCvIndir
             // 
@@ -206,28 +99,135 @@
             this.btnCvIndir.Text = "CV İndir";
             this.btnCvIndir.UseVisualStyleBackColor = false;
             // 
-            // mskTel
+            // btnCvDuzenle
             // 
-            this.mskTel.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTel.Location = new System.Drawing.Point(131, 377);
-            this.mskTel.Mask = "(999) 000-0000";
-            this.mskTel.Name = "mskTel";
-            this.mskTel.Size = new System.Drawing.Size(231, 36);
-            this.mskTel.TabIndex = 5;
+            this.btnCvDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(211)))), ((int)(((byte)(48)))));
+            this.btnCvDuzenle.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCvDuzenle.ForeColor = System.Drawing.Color.Black;
+            this.btnCvDuzenle.Location = new System.Drawing.Point(141, 466);
+            this.btnCvDuzenle.Name = "btnCvDuzenle";
+            this.btnCvDuzenle.Size = new System.Drawing.Size(118, 40);
+            this.btnCvDuzenle.TabIndex = 7;
+            this.btnCvDuzenle.Text = "CV Düzenle";
+            this.btnCvDuzenle.UseVisualStyleBackColor = false;
+            // 
+            // btnCvOlustur
+            // 
+            this.btnCvOlustur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(170)))), ((int)(((byte)(242)))));
+            this.btnCvOlustur.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCvOlustur.ForeColor = System.Drawing.Color.White;
+            this.btnCvOlustur.Location = new System.Drawing.Point(17, 466);
+            this.btnCvOlustur.Name = "btnCvOlustur";
+            this.btnCvOlustur.Size = new System.Drawing.Size(118, 40);
+            this.btnCvOlustur.TabIndex = 6;
+            this.btnCvOlustur.Text = "CV Oluştur";
+            this.btnCvOlustur.UseVisualStyleBackColor = false;
+            // 
+            // picProfile
+            // 
+            this.picProfile.Image = ((System.Drawing.Image)(resources.GetObject("picProfile.Image")));
+            this.picProfile.Location = new System.Drawing.Point(167, 61);
+            this.picProfile.Name = "picProfile";
+            this.picProfile.Size = new System.Drawing.Size(154, 129);
+            this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picProfile.TabIndex = 10;
+            this.picProfile.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 384);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 29);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Telefon:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 342);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 29);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "E-Posta:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(32, 300);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 29);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Meslek:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(45, 258);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 29);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Soyad:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 29);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ad:";
+            // 
+            // txtPosta
+            // 
+            this.txtPosta.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPosta.Location = new System.Drawing.Point(131, 335);
+            this.txtPosta.Name = "txtPosta";
+            this.txtPosta.Size = new System.Drawing.Size(231, 36);
+            this.txtPosta.TabIndex = 4;
+            // 
+            // txtMeslek
+            // 
+            this.txtMeslek.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeslek.Location = new System.Drawing.Point(131, 293);
+            this.txtMeslek.Name = "txtMeslek";
+            this.txtMeslek.Size = new System.Drawing.Size(231, 36);
+            this.txtMeslek.TabIndex = 3;
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoyad.Location = new System.Drawing.Point(131, 251);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(231, 36);
+            this.txtSoyad.TabIndex = 2;
+            // 
+            // txtAd
+            // 
+            this.txtAd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAd.Location = new System.Drawing.Point(131, 209);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(231, 36);
+            this.txtAd.TabIndex = 1;
             // 
             // grafikDepartman
             // 
-            chartArea6.Name = "ChartArea1";
-            this.grafikDepartman.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.grafikDepartman.Legends.Add(legend6);
+            chartArea1.Name = "ChartArea1";
+            this.grafikDepartman.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.grafikDepartman.Legends.Add(legend1);
             this.grafikDepartman.Location = new System.Drawing.Point(796, 40);
             this.grafikDepartman.Name = "grafikDepartman";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.grafikDepartman.Series.Add(series6);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.grafikDepartman.Series.Add(series1);
             this.grafikDepartman.Size = new System.Drawing.Size(423, 245);
             this.grafikDepartman.TabIndex = 1;
             this.grafikDepartman.Text = "chart1";
@@ -290,6 +290,7 @@
             this.MaximizeBox = false;
             this.Name = "formBasvur";
             this.Text = "Başvur";
+            this.Load += new System.EventHandler(this.formBasvur_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();

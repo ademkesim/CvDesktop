@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formGirisYap));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtMail = new System.Windows.Forms.TextBox();
+            this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,23 +48,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // TxtMail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(279, 198);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 36);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Kullanıcı Adı";
+            this.TxtMail.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMail.Location = new System.Drawing.Point(279, 198);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(266, 36);
+            this.TxtMail.TabIndex = 1;
+            this.TxtMail.Text = "Mail Adresi";
             // 
-            // textBox2
+            // TxtSifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(279, 240);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 36);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Şifre";
+            this.TxtSifre.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSifre.Location = new System.Drawing.Point(279, 240);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(266, 36);
+            this.TxtSifre.TabIndex = 2;
+            this.TxtSifre.Text = "Şifre";
             // 
             // label1
             // 
@@ -76,6 +76,7 @@
             this.label1.Size = new System.Drawing.Size(268, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Yanlış Kullanıcı Adı ya da Şifre";
+            this.label1.Visible = false;
             // 
             // linkLabel1
             // 
@@ -99,6 +100,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "GİRİŞ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -123,11 +125,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtSifre);
+            this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.pictureBox1);
             this.Name = "formGirisYap";
             this.Text = "formGirisYap";
+            this.Load += new System.EventHandler(this.formGirisYap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,8 +140,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtMail;
+        private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
