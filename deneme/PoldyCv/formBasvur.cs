@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace deneme
+namespace PoldyCv
 {
-    public partial class Form1 : Form
+    public partial class formBasvur : Form
     {
-        public Form1()
+        public formBasvur()
         {
             InitializeComponent();
         }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("deneme")]
+[assembly: AssemblyTitle("PoldyCv")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("deneme")]
+[assembly: AssemblyProduct("PoldyCv")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("232ccc0d-0e87-4abb-88bd-ef9219892a50")]
+[assembly: Guid("1c94534a-a5f6-4869-9bac-772df6a8afbf")]
 
 // Version information for an assembly consists of the following four values:
 //

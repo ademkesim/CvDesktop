@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{232CCC0D-0E87-4ABB-88BD-EF9219892A50}</ProjectGuid>
+    <ProjectGuid>{1C94534A-A5F6-4869-9BAC-772DF6A8AFBF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>deneme</RootNamespace>
-    <AssemblyName>deneme</AssemblyName>
+    <RootNamespace>PoldyCv</RootNamespace>
+    <AssemblyName>PoldyCv</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +47,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="formAna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="formAna.Designer.cs">
+      <DependentUpon>formAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBasvur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBasvur.Designer.cs">
+      <DependentUpon>formBasvur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formKaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKaydol.Designer.cs">
+      <DependentUpon>formKaydol.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="formAna.resx">
+      <DependentUpon>formAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBasvur.resx">
+      <DependentUpon>formBasvur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKaydol.resx">
+      <DependentUpon>formKaydol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
