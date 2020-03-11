@@ -53,6 +53,7 @@
     <Compile Include="CvOlustur.Designer.cs">
       <DependentUpon>CvOlustur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Baglanti.cs" />
     <Compile Include="formAna.cs">
       <SubType>Form</SubType>
     </Compile>
