@@ -34,7 +34,7 @@ namespace PoldyCv
 
         private void btnKaydol_Click(object sender, EventArgs e)
         {
-            formAna fr = new formAna();
+            formGirisYap fr = new formGirisYap();
             fr.Show();
             this.Hide();
         }

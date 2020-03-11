@@ -52,6 +52,7 @@
             this.lblEslesmiyor.Size = new System.Drawing.Size(170, 24);
             this.lblEslesmiyor.TabIndex = 8;
             this.lblEslesmiyor.Text = "Şifreler eşleşmiyor!";
+            this.lblEslesmiyor.Visible = false;
             // 
             // btnKaydol
             // 
@@ -59,7 +60,7 @@
             this.btnKaydol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKaydol.ForeColor = System.Drawing.Color.White;
             this.btnKaydol.Location = new System.Drawing.Point(169, 530);
-            this.btnKaydol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKaydol.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydol.Name = "btnKaydol";
             this.btnKaydol.Size = new System.Drawing.Size(319, 43);
             this.btnKaydol.TabIndex = 7;
@@ -72,7 +73,7 @@
             this.txtSifreOnay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSifreOnay.ForeColor = System.Drawing.Color.Gray;
             this.txtSifreOnay.Location = new System.Drawing.Point(169, 457);
-            this.txtSifreOnay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSifreOnay.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifreOnay.Name = "txtSifreOnay";
             this.txtSifreOnay.Size = new System.Drawing.Size(315, 32);
             this.txtSifreOnay.TabIndex = 6;
@@ -84,7 +85,7 @@
             this.txtSifre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSifre.ForeColor = System.Drawing.Color.Gray;
             this.txtSifre.Location = new System.Drawing.Point(169, 417);
-            this.txtSifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSifre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(315, 32);
             this.txtSifre.TabIndex = 5;
@@ -95,7 +96,7 @@
             this.txtPosta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPosta.ForeColor = System.Drawing.Color.Gray;
             this.txtPosta.Location = new System.Drawing.Point(169, 376);
-            this.txtPosta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPosta.Margin = new System.Windows.Forms.Padding(4);
             this.txtPosta.Name = "txtPosta";
             this.txtPosta.Size = new System.Drawing.Size(315, 32);
             this.txtPosta.TabIndex = 4;
@@ -106,7 +107,7 @@
             this.txtSoyad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoyad.ForeColor = System.Drawing.Color.Gray;
             this.txtSoyad.Location = new System.Drawing.Point(169, 335);
-            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(315, 32);
             this.txtSoyad.TabIndex = 3;
@@ -117,7 +118,7 @@
             this.txtAd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAd.ForeColor = System.Drawing.Color.Gray;
             this.txtAd.Location = new System.Drawing.Point(169, 295);
-            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(315, 32);
             this.txtAd.TabIndex = 2;
@@ -128,7 +129,7 @@
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Gray;
             this.txtKullaniciAdi.Location = new System.Drawing.Point(169, 254);
-            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(315, 32);
             this.txtKullaniciAdi.TabIndex = 1;
@@ -139,7 +140,7 @@
             // 
             this.profilResmi.Image = ((System.Drawing.Image)(resources.GetObject("profilResmi.Image")));
             this.profilResmi.Location = new System.Drawing.Point(250, 76);
-            this.profilResmi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.profilResmi.Margin = new System.Windows.Forms.Padding(4);
             this.profilResmi.Name = "profilResmi";
             this.profilResmi.Size = new System.Drawing.Size(159, 150);
             this.profilResmi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +163,7 @@
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.txtPosta);
             this.Controls.Add(this.txtSoyad);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "formKaydol";
             this.Text = "Kaydol";

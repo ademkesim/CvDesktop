@@ -41,12 +41,13 @@
             this.btnGirisYap.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGirisYap.ForeColor = System.Drawing.Color.White;
             this.btnGirisYap.Location = new System.Drawing.Point(328, 272);
-            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(295, 59);
             this.btnGirisYap.TabIndex = 0;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = false;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // btnKaydol
             // 
@@ -54,7 +55,7 @@
             this.btnKaydol.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKaydol.ForeColor = System.Drawing.Color.White;
             this.btnKaydol.Location = new System.Drawing.Point(328, 339);
-            this.btnKaydol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKaydol.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydol.Name = "btnKaydol";
             this.btnKaydol.Size = new System.Drawing.Size(295, 59);
             this.btnKaydol.TabIndex = 1;
@@ -67,7 +68,7 @@
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.Location = new System.Drawing.Point(143, 90);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(675, 175);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,7 +86,7 @@
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.btnGirisYap);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "formAna";
             this.Text = "Form1";

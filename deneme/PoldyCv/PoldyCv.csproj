@@ -65,6 +65,12 @@
     <Compile Include="formBasvur.Designer.cs">
       <DependentUpon>formBasvur.cs</DependentUpon>
     </Compile>
+    <Compile Include="formGirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGirisYap.Designer.cs">
+      <DependentUpon>formGirisYap.cs</DependentUpon>
+    </Compile>
     <Compile Include="formKaydol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formBasvur.resx">
       <DependentUpon>formBasvur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGirisYap.resx">
+      <DependentUpon>formGirisYap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formKaydol.resx">
       <DependentUpon>formKaydol.cs</DependentUpon>
