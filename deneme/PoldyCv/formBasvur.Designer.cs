@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formBasvur));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mskTel = new System.Windows.Forms.MaskedTextBox();
             this.btnCvIndir = new System.Windows.Forms.Button();
@@ -217,17 +217,17 @@
             // 
             // grafikDepartman
             // 
-            chartArea1.Name = "ChartArea1";
-            this.grafikDepartman.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.grafikDepartman.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.grafikDepartman.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.grafikDepartman.Legends.Add(legend2);
             this.grafikDepartman.Location = new System.Drawing.Point(796, 40);
             this.grafikDepartman.Name = "grafikDepartman";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.grafikDepartman.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.grafikDepartman.Series.Add(series2);
             this.grafikDepartman.Size = new System.Drawing.Size(423, 245);
             this.grafikDepartman.TabIndex = 1;
             this.grafikDepartman.Text = "chart1";
@@ -250,6 +250,7 @@
             this.comboBox1.Size = new System.Drawing.Size(269, 36);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.Text = "Departman Seçiniz";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 

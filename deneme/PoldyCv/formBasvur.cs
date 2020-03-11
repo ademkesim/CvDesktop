@@ -22,6 +22,7 @@ namespace PoldyCv
         private void formBasvur_Load(object sender, EventArgs e)
         {
             txtPosta.Text = mail;
+            //Kişi Bilgileri
             SqlCommand komut = new SqlCommand("Select * from Cv_Kisiler where KisiMail=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", txtPosta.Text);
             SqlDataReader dr = komut.ExecuteReader();
@@ -30,6 +31,25 @@ namespace PoldyCv
                 txtAd.Text = dr[1].ToString();
                 txtSoyad.Text = dr[2].ToString();
             }
+
+            //Başvuru Paneli
+                //Departmanlar Çekiliyor
+            SqlCommand komut1 = new SqlCommand("Select DepartmanAd,Departmanid from Cv_Departmanlar", bgl.baglanti());
+            SqlDataReader dr1 = komut1.ExecuteReader();
+            while (dr1.Read())
+            {
+
+                comboBox1.Items.Add(dr1[0]);
+            }
+            
+            //Unvanlar Çekiliyor
+
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
