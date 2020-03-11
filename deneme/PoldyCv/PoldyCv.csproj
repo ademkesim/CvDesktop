@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CvOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CvOlustur.Designer.cs">
+      <DependentUpon>CvOlustur.cs</DependentUpon>
+    </Compile>
     <Compile Include="formAna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CvOlustur.resx">
+      <DependentUpon>CvOlustur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formAna.resx">
       <DependentUpon>formAna.cs</DependentUpon>
     </EmbeddedResource>
