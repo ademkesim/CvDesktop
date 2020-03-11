@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baglanti.cs" />
     <Compile Include="formAna.cs">
       <SubType>Form</SubType>
     </Compile>
