@@ -68,8 +68,7 @@ namespace PoldyCv
                 komut.Parameters.AddWithValue("@p3", txtSoyad.Text);
                 komut.Parameters.AddWithValue("@p4", txtPosta.Text);
                 komut.Parameters.AddWithValue("@p5", txtSifre.Text);
-
-
+                komut.ExecuteNonQuery();
                 MessageBox.Show("Kayıt Eklendi...");
                 bgl.baglanti().Close();
                 formAna fr = new formAna();
@@ -81,6 +80,11 @@ namespace PoldyCv
         private void profilResmi_Click(object sender, EventArgs e)
         {
             resimdata();
+        }
+
+        private void formKaydol_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

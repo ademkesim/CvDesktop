@@ -68,5 +68,10 @@ namespace PoldyCv
             bgl.baglanti().Close();
             MessageBox.Show("Başvurunuz Gerçekleşmiştir Biz sizi geri ararız", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnCvIndir_Click(object sender, EventArgs e)
+        {
+            
+            }
+        }
     }
-}
