@@ -38,18 +38,24 @@ namespace PoldyCv
             SqlDataReader dr1 = komut1.ExecuteReader();
             while (dr1.Read())
             {
-
                 comboBox1.Items.Add(dr1[0]);
             }
-            
-            //Unvanlar Çekiliyor
-
+            bgl.baglanti().Close();
 
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //Unvanlar Çekiliyor
+            comboBox2.Items.Clear();
+            SqlCommand komut2 = new SqlCommand("Select UnvanAd From Cv_Unvanlar Where DepartmanAd=@p3", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p3", comboBox1.Text);
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                comboBox2.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
     }
 }
