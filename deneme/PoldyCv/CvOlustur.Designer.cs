@@ -62,11 +62,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.richTextBox3);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.richTextBox2);
@@ -102,9 +104,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(9, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1412, 629);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -114,7 +116,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Location = new System.Drawing.Point(640, 320);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(193, 84);
             this.richTextBox3.TabIndex = 33;
@@ -133,7 +135,7 @@
             // richTextBox2
             // 
             this.richTextBox2.Location = new System.Drawing.Point(640, 170);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(304, 142);
             this.richTextBox2.TabIndex = 31;
@@ -152,7 +154,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(640, 130);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(193, 30);
             this.textBox12.TabIndex = 29;
@@ -170,7 +172,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(640, 91);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(193, 30);
             this.textBox11.TabIndex = 27;
@@ -188,7 +190,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(640, 52);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(193, 30);
             this.textBox10.TabIndex = 25;
@@ -206,7 +208,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(201, 130);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(193, 30);
             this.textBox9.TabIndex = 23;
@@ -214,7 +216,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(201, 500);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(193, 30);
             this.textBox8.TabIndex = 22;
@@ -232,7 +234,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(201, 407);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(193, 84);
             this.richTextBox1.TabIndex = 20;
@@ -251,7 +253,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(201, 363);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(193, 30);
             this.textBox7.TabIndex = 18;
@@ -269,7 +271,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(201, 324);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(193, 30);
             this.textBox6.TabIndex = 16;
@@ -297,7 +299,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(201, 284);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(193, 30);
             this.textBox5.TabIndex = 12;
@@ -306,7 +308,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(305, 208);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(85, 29);
             this.checkBox2.TabIndex = 11;
@@ -347,7 +349,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(201, 209);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(84, 29);
             this.checkBox1.TabIndex = 7;
@@ -357,7 +359,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(201, 170);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(193, 30);
             this.textBox2.TabIndex = 6;
@@ -365,7 +367,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(203, 91);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(193, 30);
             this.textBox3.TabIndex = 4;
@@ -373,7 +375,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(201, 245);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(193, 30);
             this.textBox4.TabIndex = 4;
@@ -381,7 +383,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(201, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 30);
             this.textBox1.TabIndex = 4;
@@ -416,13 +418,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ad Soyad :";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(806, 545);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 51);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Oluştur";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // CvOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1428, 639);
+            this.ClientSize = new System.Drawing.Size(987, 639);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CvOlustur";
             this.Text = "CvOlustur";
             this.Load += new System.EventHandler(this.CvOlustur_Load);
@@ -468,5 +480,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button1;
     }
 }
