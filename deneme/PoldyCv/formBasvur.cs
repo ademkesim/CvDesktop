@@ -57,5 +57,16 @@ namespace PoldyCv
             }
             bgl.baglanti().Close();
         }
+
+        private void btnBasvur_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut3 = new SqlCommand("insert into Cv_Basvuru (BasvuruDepartman,BasvuruUnvan,BasvuruOnYazı) values (@p1,@p2,@p3)", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@p1", comboBox1.Text);
+            komut3.Parameters.AddWithValue("@p2", comboBox2.Text);
+            komut3.Parameters.AddWithValue("@p3", richTextBox1.Text);
+            komut3.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Başvurunuz Gerçekleşmiştir Biz sizi geri ararız", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
