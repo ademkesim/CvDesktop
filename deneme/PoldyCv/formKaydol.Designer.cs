@@ -38,6 +38,7 @@
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.profilResmi = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.profilResmi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,6 @@
             this.txtSifreOnay.Size = new System.Drawing.Size(315, 32);
             this.txtSifreOnay.TabIndex = 6;
             this.txtSifreOnay.Text = "Şifre Onayla";
-            this.txtSifreOnay.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // txtSifre
             // 
@@ -134,7 +134,6 @@
             this.txtKullaniciAdi.Size = new System.Drawing.Size(315, 32);
             this.txtKullaniciAdi.TabIndex = 1;
             this.txtKullaniciAdi.Text = "Kullanıcı Adı";
-            this.txtKullaniciAdi.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // profilResmi
             // 
@@ -146,6 +145,11 @@
             this.profilResmi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profilResmi.TabIndex = 0;
             this.profilResmi.TabStop = false;
+            this.profilResmi.Click += new System.EventHandler(this.profilResmi_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // formKaydol
             // 
@@ -167,7 +171,6 @@
             this.MaximizeBox = false;
             this.Name = "formKaydol";
             this.Text = "Kaydol";
-            this.Load += new System.EventHandler(this.formKaydol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profilResmi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -184,5 +187,6 @@
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Button btnKaydol;
         private System.Windows.Forms.Label lblEslesmiyor;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
