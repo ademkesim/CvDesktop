@@ -24,6 +24,7 @@ namespace PoldyCv
         Baglanti bgl = new Baglanti();
         private void formYoneticiPanel_Load(object sender, EventArgs e)
         {
+            
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("Select Basvuruid,BasvuruDepartman,BasvuruUnvan,BasvuruOnYazı From Cv_Basvuru ", bgl.baglanti());
             da.Fill(dt);
@@ -56,10 +57,26 @@ namespace PoldyCv
                 cmbDepartmanSec.Items.Add(dr5[0]);
             }
         }
-
+        public string id;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            cmbUnvan.Items.Clear();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Cv_Basvuru where BasvuruDepartman ='" + cmbDepartman.Text + "'", bgl.baglanti());
+            da.Fill(dt);
+            dataBasvurular.DataSource = dt;
+            SqlCommand komut6 = new SqlCommand("Select  Departmanid from Cv_Departmanlar where DepartmanAd='" + cmbDepartman.Text + "'", bgl.baglanti());
+            SqlDataReader dr6 = komut6.ExecuteReader();
+            if (dr6.Read())
+            {
+                id = dr6[0].ToString();
+            }
+            SqlCommand komut7 = new SqlCommand("Select UnvanAd from Cv_Unvanlar where Departmanid = '" + id + "'", bgl.baglanti());
+            SqlDataReader dr7 = komut7.ExecuteReader();
+            while (dr7.Read())
+            {
+                cmbUnvan.Items.Add(dr7[0]);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,6 +161,15 @@ namespace PoldyCv
             ms.Position = 0;
             File.WriteAllBytes(@"D:\mypdf.pdf", ms.ToArray());
             Process.Start(@"D:\mypdf.pdf");
+        }
+
+        private void cmbUnvan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Cv_Basvuru where BasvuruDepartman ='" + cmbDepartman.Text + "' and BasvuruUnvan = '" + cmbUnvan.Text + "'", bgl.baglanti());
+            da.Fill(dt);
+            dataBasvurular.DataSource = dt;
+            bgl.baglanti().Close();
         }
     }
 }

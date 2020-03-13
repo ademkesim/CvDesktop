@@ -44,10 +44,12 @@ namespace PoldyCv
                 if (sdr[6].ToString()=="1")
                 {
                     fyb.Show();
+                    this.Hide();
                 }
                 else
                 {
                     fb.Show();
+                    this.Hide();
                 }
                 
             }

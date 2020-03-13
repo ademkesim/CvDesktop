@@ -214,6 +214,7 @@
             this.cmbUnvan.Size = new System.Drawing.Size(221, 36);
             this.cmbUnvan.TabIndex = 5;
             this.cmbUnvan.Text = "Ünvan Seç";
+            this.cmbUnvan.SelectedIndexChanged += new System.EventHandler(this.cmbUnvan_SelectedIndexChanged);
             // 
             // button1
             // 
