@@ -11,7 +11,7 @@ namespace PoldyCv
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("Data Source=FERIT\\FERIT;Initial Catalog=PoldyCv;Integrated Security=True");
+            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-1DNGMBR\\MSSQL;Initial Catalog=PoldyCv;Integrated Security=True");
             baglan.Open();
             return baglan;
         }

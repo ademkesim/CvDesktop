@@ -38,8 +38,18 @@ namespace PoldyCv
             if (sdr.Read())
             {
                 formBasvur fb = new formBasvur();
+                formYoneticiPaneli fyb = new formYoneticiPaneli();
+                fyb.mail = TxtMail.Text;
                 fb.mail = TxtMail.Text;
-                fb.Show();
+                if (sdr[6].ToString()=="1")
+                {
+                    fyb.Show();
+                }
+                else
+                {
+                    fb.Show();
+                }
+                
             }
             else
             {
