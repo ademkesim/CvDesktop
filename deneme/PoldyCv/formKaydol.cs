@@ -32,25 +32,7 @@ namespace PoldyCv
                 profilResmi.Image = Image.FromFile(openFileDialog1.FileName);
                 resimpath = openFileDialog1.FileName.ToString();
             }
-            //FileStream fs = new FileStream(resimpath, FileMode.Open, FileAccess.Read);
-            //BinaryReader br = new BinaryReader(fs);
-            //byte[] resim = br.ReadBytes((int)fs.Length);
-            //br.Close();
-            //SqlCommand komut2 = new SqlCommand("insert into Cv_Kisiler (KisiResim) values(@resim)", bgl.baglanti());
-            //komut2.Parameters.Add("@resim", SqlDbType.Image, resim.Length).Value = resim;
-            //try
-            //{
-            //    komut2.ExecuteNonQuery();
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message.ToString());
-            //}
-            //finally
-            //{
-            //    bgl.baglanti().Close();
-            //}
+           
 
         }
 
