@@ -203,5 +203,11 @@ namespace PoldyCv
         {
 
         }
+
+        private void btnCvOlustur_Click(object sender, EventArgs e)
+        {
+            CvOlustur cvolustur = new CvOlustur();
+            cvolustur.Show();
+        }
     }
     }

@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formBasvur));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCvIndir = new System.Windows.Forms.Button();
-            this.btnCvDuzenle = new System.Windows.Forms.Button();
             this.btnCvOlustur = new System.Windows.Forms.Button();
             this.picProfile = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,7 +57,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnCvIndir);
-            this.panel1.Controls.Add(this.btnCvDuzenle);
             this.panel1.Controls.Add(this.btnCvOlustur);
             this.panel1.Controls.Add(this.picProfile);
             this.panel1.Controls.Add(this.label4);
@@ -79,40 +77,28 @@
             this.btnCvIndir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(130)))), ((int)(((byte)(49)))));
             this.btnCvIndir.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCvIndir.ForeColor = System.Drawing.Color.White;
-            this.btnCvIndir.Location = new System.Drawing.Point(263, 439);
+            this.btnCvIndir.Location = new System.Drawing.Point(222, 427);
             this.btnCvIndir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCvIndir.Name = "btnCvIndir";
-            this.btnCvIndir.Size = new System.Drawing.Size(117, 39);
+            this.btnCvIndir.Size = new System.Drawing.Size(172, 62);
             this.btnCvIndir.TabIndex = 8;
             this.btnCvIndir.Text = "CV İndir";
             this.btnCvIndir.UseVisualStyleBackColor = false;
             this.btnCvIndir.Click += new System.EventHandler(this.btnCvIndir_Click);
-            // 
-            // btnCvDuzenle
-            // 
-            this.btnCvDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(211)))), ((int)(((byte)(48)))));
-            this.btnCvDuzenle.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCvDuzenle.ForeColor = System.Drawing.Color.Black;
-            this.btnCvDuzenle.Location = new System.Drawing.Point(139, 439);
-            this.btnCvDuzenle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCvDuzenle.Name = "btnCvDuzenle";
-            this.btnCvDuzenle.Size = new System.Drawing.Size(117, 39);
-            this.btnCvDuzenle.TabIndex = 7;
-            this.btnCvDuzenle.Text = "CV Düzenle";
-            this.btnCvDuzenle.UseVisualStyleBackColor = false;
             // 
             // btnCvOlustur
             // 
             this.btnCvOlustur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(170)))), ((int)(((byte)(242)))));
             this.btnCvOlustur.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCvOlustur.ForeColor = System.Drawing.Color.White;
-            this.btnCvOlustur.Location = new System.Drawing.Point(13, 439);
+            this.btnCvOlustur.Location = new System.Drawing.Point(23, 427);
             this.btnCvOlustur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCvOlustur.Name = "btnCvOlustur";
-            this.btnCvOlustur.Size = new System.Drawing.Size(117, 39);
+            this.btnCvOlustur.Size = new System.Drawing.Size(172, 62);
             this.btnCvOlustur.TabIndex = 6;
             this.btnCvOlustur.Text = "CV Oluştur";
             this.btnCvOlustur.UseVisualStyleBackColor = false;
+            this.btnCvOlustur.Click += new System.EventHandler(this.btnCvOlustur_Click);
             // 
             // picProfile
             // 
@@ -185,17 +171,17 @@
             // 
             // grafikDepartman
             // 
-            chartArea2.Name = "ChartArea1";
-            this.grafikDepartman.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.grafikDepartman.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.grafikDepartman.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.grafikDepartman.Legends.Add(legend1);
             this.grafikDepartman.Location = new System.Drawing.Point(477, 84);
             this.grafikDepartman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grafikDepartman.Name = "grafikDepartman";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Aranan Eleman Sayisi";
-            this.grafikDepartman.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Aranan Eleman Sayisi";
+            this.grafikDepartman.Series.Add(series1);
             this.grafikDepartman.Size = new System.Drawing.Size(742, 229);
             this.grafikDepartman.TabIndex = 1;
             this.grafikDepartman.Text = "chart1";
@@ -298,7 +284,6 @@
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Button btnCvIndir;
-        private System.Windows.Forms.Button btnCvDuzenle;
         private System.Windows.Forms.Button btnCvOlustur;
         private System.Windows.Forms.DataVisualization.Charting.Chart grafikDepartman;
         private System.Windows.Forms.RichTextBox richTextBox1;

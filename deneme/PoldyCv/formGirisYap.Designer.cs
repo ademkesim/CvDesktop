@@ -44,7 +44,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(133, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(559, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(467, 106);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -69,6 +69,7 @@
             this.TxtSifre.Size = new System.Drawing.Size(266, 36);
             this.TxtSifre.TabIndex = 2;
             this.TxtSifre.Text = "Şifre";
+            this.TxtSifre.UseSystemPasswordChar = true;
             this.TxtSifre.Enter += new System.EventHandler(this.TxtSifre_Enter);
             this.TxtSifre.Leave += new System.EventHandler(this.TxtSifre_Leave);
             // 

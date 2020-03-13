@@ -58,6 +58,11 @@ namespace PoldyCv
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Cv'niz Oluşturuldu");
+            formBasvur fb = new formBasvur();
+            
+            fb.Show();
+            this.Hide();
+
 
         }
     }
