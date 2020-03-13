@@ -80,7 +80,7 @@ namespace PoldyCv
             komut3.Parameters.AddWithValue("@p3", richTextBox1.Text);
             komut3.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("Başvurunuz Gerçekleşmiştir Biz sizi geri ararız", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Başvurunuz Tamamlanmıştır.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public string TurkceKarakter(string text)
         {
@@ -190,6 +190,11 @@ namespace PoldyCv
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
