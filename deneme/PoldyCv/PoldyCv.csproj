@@ -58,6 +58,14 @@
       <DependentUpon>CvOlustur.cs</DependentUpon>
     </Compile>
     <Compile Include="Baglanti.cs" />
+    <Compile Include="..\..\..\..\..\OneDrive\Masaüstü\DepartmanEkle.cs">
+      <SubType>Form</SubType>
+      <Link>DepartmanEkle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\OneDrive\Masaüstü\DepartmanEkle.Designer.cs">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+      <Link>DepartmanEkle.Designer.cs</Link>
+    </Compile>
     <Compile Include="formAna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +112,10 @@
     </Compile>
     <EmbeddedResource Include="CvOlustur.resx">
       <DependentUpon>CvOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\OneDrive\Masaüstü\DepartmanEkle.resx">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+      <Link>DepartmanEkle.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="formAna.resx">
       <DependentUpon>formAna.cs</DependentUpon>

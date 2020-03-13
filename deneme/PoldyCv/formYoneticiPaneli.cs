@@ -171,5 +171,11 @@ namespace PoldyCv
             dataBasvurular.DataSource = dt;
             bgl.baglanti().Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DepartmanEkle dp = new DepartmanEkle();
+            dp.Show();
+        }
     }
 }
