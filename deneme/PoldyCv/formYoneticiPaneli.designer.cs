@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblToplamBasvuruSayisi = new System.Windows.Forms.Label();
             this.cmbUnvan = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
@@ -80,7 +81,7 @@
             this.txtKacKisi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKacKisi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtKacKisi.Location = new System.Drawing.Point(201, 74);
-            this.txtKacKisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKacKisi.Margin = new System.Windows.Forms.Padding(4);
             this.txtKacKisi.Name = "txtKacKisi";
             this.txtKacKisi.Size = new System.Drawing.Size(183, 32);
             this.txtKacKisi.TabIndex = 10;
@@ -156,8 +157,10 @@
             this.dataBasvurular.RowHeadersWidth = 51;
             this.dataBasvurular.RowTemplate.Height = 24;
             this.dataBasvurular.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataBasvurular.Size = new System.Drawing.Size(901, 295);
+            this.dataBasvurular.Size = new System.Drawing.Size(602, 295);
             this.dataBasvurular.TabIndex = 1;
+            this.dataBasvurular.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBasvurular_CellContentClick);
+            this.dataBasvurular.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBasvurular_CellContentClick);
             // 
             // cmbDepartman
             // 
@@ -181,7 +184,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(623, 260);
+            this.label6.Location = new System.Drawing.Point(492, 260);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(236, 29);
             this.label6.TabIndex = 3;
@@ -212,6 +215,19 @@
             this.cmbUnvan.TabIndex = 5;
             this.cmbUnvan.Text = "Ünvan Seç";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(694, 388);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 106);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Cv Pdf İndir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // formYoneticiPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,6 +235,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(216)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(925, 617);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbUnvan);
             this.Controls.Add(this.lblToplamBasvuruSayisi);
             this.Controls.Add(this.label6);
@@ -255,5 +272,6 @@
         private System.Windows.Forms.ComboBox cmbDepartmanSec;
         private System.Windows.Forms.TextBox txtKacKisi;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

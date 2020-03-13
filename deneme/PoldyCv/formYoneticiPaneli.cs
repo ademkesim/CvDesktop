@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-	
-
+using System.Diagnostics;
 
 namespace PoldyCv
 {
@@ -26,7 +25,7 @@ namespace PoldyCv
         private void formYoneticiPanel_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Cv_Basvuru ", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Basvuruid,BasvuruDepartman,BasvuruUnvan,BasvuruOnYazı From Cv_Basvuru ", bgl.baglanti());
             da.Fill(dt);
             dataBasvurular.DataSource = dt;
 
@@ -117,6 +116,34 @@ namespace PoldyCv
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void dataBasvurular_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataBasvurular.SelectedCells[0].RowIndex;
+            tasiyici = dataBasvurular.Rows[secilen].Cells[0].Value.ToString();
+            MessageBox.Show(tasiyici);
+        }
+        public string tasiyici;
+        private void dataBasvurular_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataBasvurular.SelectedCells[0].RowIndex;
+            tasiyici = dataBasvurular.Rows[secilen].Cells[0].Value.ToString();
+            MessageBox.Show(tasiyici);
+        }
+        public byte[] ap;
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Select BasvuruPdf from Cv_Basvuru where Basvuruid=" + tasiyici, bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            
+            if (dr.Read())
+            {
+                this.ap = (byte[])(dr[0]);
+            }
+            MemoryStream ms = new MemoryStream(ap);
+            ms.Position = 0;
+            File.WriteAllBytes(@"D:\mypdf.pdf", ms.ToArray());
+            Process.Start(@"D:\mypdf.pdf");
         }
     }
 }
