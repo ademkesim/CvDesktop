@@ -107,5 +107,118 @@ namespace PoldyCv
         {
 
         }
+
+        private void txtKullaniciAdi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKullaniciAdi_Enter(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text == "Kullanıcı Adı")
+            {
+                txtKullaniciAdi.Text = "";
+                txtKullaniciAdi.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtKullaniciAdi_Leave(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text == "")
+            {
+                txtKullaniciAdi.Text = "Kullanıcı Adı";
+                txtKullaniciAdi.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtAd_Enter(object sender, EventArgs e)
+        {
+            if (txtAd.Text == "Ad")
+            {
+                txtAd.Text = "";
+                txtAd.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtAd_Leave(object sender, EventArgs e)
+        {
+            if (txtAd.Text == "")
+            {
+                txtAd.Text = "Ad";
+                txtAd.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtSoyad_Enter(object sender, EventArgs e)
+        {
+            if (txtSoyad.Text == "Soyad")
+            {
+                txtSoyad.Text = "";
+                txtSoyad.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSoyad_Leave(object sender, EventArgs e)
+        {
+            if (txtSoyad.Text == "")
+            {
+                txtSoyad.Text = "Soyad";
+                txtSoyad.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtPosta_Enter(object sender, EventArgs e)
+        {
+            if (txtPosta.Text == "E-Posta")
+            {
+                txtPosta.Text = "";
+                txtPosta.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtPosta_Leave(object sender, EventArgs e)
+        {
+            if (txtPosta.Text == "")
+            {
+                txtPosta.Text = "E-Posta";
+                txtPosta.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtSifre_Enter(object sender, EventArgs e)
+        {
+            if (txtSifre.Text == "Şifre")
+            {
+                txtSifre.Text = "";
+                txtSifre.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSifre_Leave(object sender, EventArgs e)
+        {
+            if (txtSifre.Text == "")
+            {
+                txtSifre.Text = "Şifre";
+                txtSifre.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtSifreOnay_Enter(object sender, EventArgs e)
+        {
+            if (txtSifreOnay.Text == "Şifreyi Onayla")
+            {
+                txtSifreOnay.Text = "";
+                txtSifreOnay.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSifreOnay_Leave(object sender, EventArgs e)
+        {
+            if (txtSifreOnay.Text == "")
+            {
+                txtSifreOnay.Text = "Şifreyi Onayla";
+                txtSifreOnay.ForeColor = Color.Gray;
+            }
+        }
     }
 }

@@ -51,20 +51,26 @@
             // TxtMail
             // 
             this.TxtMail.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMail.ForeColor = System.Drawing.Color.Gray;
             this.TxtMail.Location = new System.Drawing.Point(279, 198);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(266, 36);
             this.TxtMail.TabIndex = 1;
             this.TxtMail.Text = "Mail Adresi";
+            this.TxtMail.Enter += new System.EventHandler(this.TxtMail_Enter);
+            this.TxtMail.Leave += new System.EventHandler(this.TxtMail_Leave);
             // 
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSifre.ForeColor = System.Drawing.Color.Gray;
             this.TxtSifre.Location = new System.Drawing.Point(279, 240);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(266, 36);
             this.TxtSifre.TabIndex = 2;
             this.TxtSifre.Text = "Şifre";
+            this.TxtSifre.Enter += new System.EventHandler(this.TxtSifre_Enter);
+            this.TxtSifre.Leave += new System.EventHandler(this.TxtSifre_Leave);
             // 
             // label1
             // 
@@ -105,6 +111,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(101)))), ((int)(((byte)(132)))));
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(279, 308);
