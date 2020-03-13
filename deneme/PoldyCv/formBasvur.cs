@@ -78,10 +78,11 @@ namespace PoldyCv
 
         private void btnBasvur_Click(object sender, EventArgs e)
         {
-            SqlCommand komut3 = new SqlCommand("insert into Cv_Basvuru (BasvuruDepartman,BasvuruUnvan,BasvuruOnYazı) values (@p1,@p2,@p3)", bgl.baglanti());
+            SqlCommand komut3 = new SqlCommand("insert into Cv_Basvuru (BasvuruDepartman,BasvuruUnvan,BasvuruOnYazı,BasvuruPdf) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komut3.Parameters.AddWithValue("@p1", comboBox1.Text);
             komut3.Parameters.AddWithValue("@p2", comboBox2.Text);
             komut3.Parameters.AddWithValue("@p3", richTextBox1.Text);
+            komut3.Parameters.AddWithValue("@p4", File.ReadAllBytes(@"C:\\Users\\ademk\\source\repos\\Poldy4\\deneme\\PoldyCv\\Cv.pdf"));
             komut3.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Başvurunuz Tamamlanmıştır.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -119,7 +120,7 @@ namespace PoldyCv
         {
             iTextSharp.text.Document document = new iTextSharp.text.Document();
 
-            PdfWriter.GetInstance(document, new FileStream(@"C:\Users\ademk\source\repos\Poldy3\deneme\PoldyCv\Cv.pdf", FileMode.Create));
+            PdfWriter.GetInstance(document, new FileStream(@"C:\Users\ademk\source\repos\Poldy4\deneme\PoldyCv\Cv.pdf", FileMode.Create));
 
             BaseFont arial = BaseFont.CreateFont("C:\\windows\\fonts\\arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
 
@@ -132,7 +133,7 @@ namespace PoldyCv
 
                 document.Open();
 
-                iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(@"C:\Users\ademk\source\repos\Poldy3\deneme\PoldyCv\vesikalik.jpg");
+                iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(@"C:\Users\ademk\source\repos\Poldy4\deneme\PoldyCv\vesikalik.jpg");
                 img.ScalePercent(30f, 20f);
                 //Unvanlar Çekiliyor
                 comboBox2.Items.Clear();
