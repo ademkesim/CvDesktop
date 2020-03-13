@@ -69,6 +69,7 @@
             this.TxtSifre.Size = new System.Drawing.Size(266, 36);
             this.TxtSifre.TabIndex = 2;
             this.TxtSifre.Text = "Şifre";
+            this.TxtSifre.UseSystemPasswordChar = true;
             this.TxtSifre.Enter += new System.EventHandler(this.TxtSifre_Enter);
             this.TxtSifre.Leave += new System.EventHandler(this.TxtSifre_Leave);
             // 
