@@ -20,6 +20,7 @@ namespace PoldyCv
         }
         Baglanti bgl = new Baglanti();
         public string resimpath;
+     
         public void resimdata()
         {
 
@@ -31,25 +32,25 @@ namespace PoldyCv
                 profilResmi.Image = Image.FromFile(openFileDialog1.FileName);
                 resimpath = openFileDialog1.FileName.ToString();
             }
-            FileStream fs = new FileStream(resimpath, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(fs);
-            byte[] resim = br.ReadBytes((int)fs.Length);
-            br.Close();
-            SqlCommand komut2 = new SqlCommand("insert into Cv_Kisiler (KisiResim) values(@resim)", bgl.baglanti());
-            komut2.Parameters.Add("@resim", SqlDbType.Image, resim.Length).Value = resim;
-            try
-            {
-                komut2.ExecuteNonQuery();
+            //FileStream fs = new FileStream(resimpath, FileMode.Open, FileAccess.Read);
+            //BinaryReader br = new BinaryReader(fs);
+            //byte[] resim = br.ReadBytes((int)fs.Length);
+            //br.Close();
+            //SqlCommand komut2 = new SqlCommand("insert into Cv_Kisiler (KisiResim) values(@resim)", bgl.baglanti());
+            //komut2.Parameters.Add("@resim", SqlDbType.Image, resim.Length).Value = resim;
+            //try
+            //{
+            //    komut2.ExecuteNonQuery();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
-            finally
-            {
-                bgl.baglanti().Close();
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message.ToString());
+            //}
+            //finally
+            //{
+            //    bgl.baglanti().Close();
+            //}
 
         }
 
@@ -62,15 +63,35 @@ namespace PoldyCv
             }
             else
             {
-                SqlCommand komut = new SqlCommand("Update  Cv_Kisiler set KisikAdi=@p1,KisiAd=@p2,KisiSoyad=@p3,KisiMail=@p4,KisiSifre=@p5  ", bgl.baglanti());
+                FileStream fs = new FileStream(resimpath, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+                byte[] resim = br.ReadBytes((int)fs.Length);
+                br.Close();
+                SqlCommand komut = new SqlCommand("insert into Cv_Kisiler (KisikAdi,KisiAd,KisiSoyad,KisiMail,KisiSifre,KisiResim) values(@p1,@p2,@p3,@p4,@p5,@p6)   ", bgl.baglanti());
                 komut.Parameters.AddWithValue("@p1", txtKullaniciAdi.Text);
                 komut.Parameters.AddWithValue("@p2", txtAd.Text);
                 komut.Parameters.AddWithValue("@p3", txtSoyad.Text);
                 komut.Parameters.AddWithValue("@p4", txtPosta.Text);
                 komut.Parameters.AddWithValue("@p5", txtSifre.Text);
+                komut.Parameters.Add("@p6", SqlDbType.Image, resim.Length).Value = resim;
+               
+               
+                try
+                {
+                    komut.ExecuteNonQuery();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+                finally
+                {
+                    bgl.baglanti().Close();
+                }
                 komut.ExecuteNonQuery();
-                MessageBox.Show("Kayıt Eklendi...");
                 bgl.baglanti().Close();
+                MessageBox.Show("Kayıt Eklendi...");
                 formAna fr = new formAna();
                 fr.Show();
                 this.Hide();
