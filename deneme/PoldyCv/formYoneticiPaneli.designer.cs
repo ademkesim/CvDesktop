@@ -159,6 +159,7 @@
             this.dataBasvurular.Name = "dataBasvurular";
             this.dataBasvurular.RowHeadersWidth = 51;
             this.dataBasvurular.RowTemplate.Height = 24;
+            this.dataBasvurular.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dataBasvurular.Size = new System.Drawing.Size(676, 240);
             this.dataBasvurular.TabIndex = 1;
             // 

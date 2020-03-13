@@ -16,7 +16,7 @@ namespace PoldyCv
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formYoneticiPaneli());
+            Application.Run(new formAna());
         }
     }
 }

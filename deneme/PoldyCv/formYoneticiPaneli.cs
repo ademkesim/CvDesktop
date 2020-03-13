@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 	
 
 
@@ -35,11 +36,16 @@ namespace PoldyCv
                 lblToplamBasvuruSayisi.Text = dr3[0].ToString();
             }
 
-            SqlCommand komut4 = new SqlCommand("Select KisiResim From Cv_Kisiler where kisiid=1",bgl.baglanti());
+            SqlCommand komut4 = new SqlCommand("Select KisiResim From Cv_Kisiler where KisiAd=Hasan",bgl.baglanti());
             SqlDataReader dr4 = komut4.ExecuteReader();
-            if (dr4.Read())
+            if (dr4["KisiResim"]!=null)
             {
-                picProfile.ImageLocation= dr4[0].ToString();
+                Byte[] data = new Byte[0];
+                data = (Byte[])(dr4["KisiResim"]);
+                MemoryStream mem = new MemoryStream(data);
+                picProfile.Image = Image.FromFile(mem);
+
+               
             }
         }
 
