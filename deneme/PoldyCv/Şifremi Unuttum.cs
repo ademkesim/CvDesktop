@@ -47,6 +47,7 @@ namespace PoldyCv
                 mesajim.Subject = "Şifre Hatırlatma";
                 mesajim.Body = ("Şifreniz:" + sifre);
                 smtp.Send(mesajim);
+                MessageBox.Show("Şifreniz Mail Adresinize Gönderildi");
 
             }
             else
@@ -73,6 +74,11 @@ namespace PoldyCv
                 textBox1.Text = "E Posta";
                 textBox1.ForeColor = Color.Gray;
             }
+        }
+
+        private void Şifremi_Unuttum_Load(object sender, EventArgs e)
+        {
+
         }
     }
        

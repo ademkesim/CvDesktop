@@ -174,8 +174,7 @@ namespace PoldyCv
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DepartmanEkle dp = new DepartmanEkle();
-            dp.Show();
+           
         }
     }
 }

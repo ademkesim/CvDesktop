@@ -94,5 +94,11 @@ namespace PoldyCv
                 TxtSifre.ForeColor = Color.Gray;
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Şifremi_Unuttum sfr = new Şifremi_Unuttum();
+            sfr.Show();
+        }
     }
 }

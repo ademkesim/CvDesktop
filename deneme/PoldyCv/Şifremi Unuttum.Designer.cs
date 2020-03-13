@@ -49,7 +49,7 @@
             this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(64, 57);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 31);
+            this.textBox1.Size = new System.Drawing.Size(232, 36);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "E Posta";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -57,7 +57,7 @@
             // 
             // Şifremi_Unuttum
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 178);
             this.Controls.Add(this.textBox1);
@@ -66,6 +66,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Şifremi_Unuttum";
             this.Text = "FormSifremiUnuttum";
+            this.Load += new System.EventHandler(this.Şifremi_Unuttum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
