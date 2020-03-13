@@ -67,8 +67,7 @@ namespace PoldyCv
                 BinaryReader br = new BinaryReader(fs);
                 byte[] resim = br.ReadBytes((int)fs.Length);
                 br.Close();
-                SqlCommand komut = new SqlCommand("insert into Cv_Kisiler (KisikAdi,KisiAd,KisiSoyad,KisiMail,KisiSifre,KisiResim) values(@p1,@p2,@p3,@p4,@p5,@p6)   ", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", txtKullaniciAdi.Text);
+                SqlCommand komut = new SqlCommand("insert into Cv_Kisiler (KisiAd,KisiSoyad,KisiMail,KisiSifre,KisiResim) values(@p2,@p3,@p4,@p5,@p6)   ", bgl.baglanti());
                 komut.Parameters.AddWithValue("@p2", txtAd.Text);
                 komut.Parameters.AddWithValue("@p3", txtSoyad.Text);
                 komut.Parameters.AddWithValue("@p4", txtPosta.Text);
@@ -113,23 +112,7 @@ namespace PoldyCv
 
         }
 
-        private void txtKullaniciAdi_Enter(object sender, EventArgs e)
-        {
-            if (txtKullaniciAdi.Text == "Kullanıcı Adı")
-            {
-                txtKullaniciAdi.Text = "";
-                txtKullaniciAdi.ForeColor = Color.Black;
-            }
-        }
 
-        private void txtKullaniciAdi_Leave(object sender, EventArgs e)
-        {
-            if (txtKullaniciAdi.Text == "")
-            {
-                txtKullaniciAdi.Text = "Kullanıcı Adı";
-                txtKullaniciAdi.ForeColor = Color.Gray;
-            }
-        }
 
         private void txtAd_Enter(object sender, EventArgs e)
         {

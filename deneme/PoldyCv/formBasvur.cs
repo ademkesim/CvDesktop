@@ -29,11 +29,15 @@ namespace PoldyCv
             SqlCommand komut = new SqlCommand("Select * from Cv_Kisiler where KisiMail=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", txtPosta.Text);
             SqlDataReader dr = komut.ExecuteReader();
+            Byte[] data = new byte[0];
             if (dr.Read())
             {
                 txtAd.Text = dr[1].ToString();
                 txtSoyad.Text = dr[2].ToString();
+                data = (Byte[])(dr[5]);
             }
+            MemoryStream mem = new MemoryStream(data);
+            picProfile.Image = System.Drawing.Image.FromStream(mem);
             //Point leri temizleme.
             foreach (var series in grafikDepartman.Series)
             {
@@ -183,7 +187,7 @@ namespace PoldyCv
 
                 text = TurkceKarakter(text);
                 document.Add(new Paragraph(text, font));
-
+                MessageBox.Show("Cv'niz Oluşturulmuştur.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 document.Close();
 
             }
