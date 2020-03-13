@@ -34,16 +34,27 @@ namespace PoldyCv
                 txtAd.Text = dr[1].ToString();
                 txtSoyad.Text = dr[2].ToString();
             }
-
+            //Point leri temizleme.
+            foreach (var series in grafikDepartman.Series)
+            {
+                series.Points.Clear();
+            }
             //Başvuru Paneli
-                //Departmanlar Çekiliyor
-            SqlCommand komut1 = new SqlCommand("Select DepartmanAd,Departmanid from Cv_Departmanlar", bgl.baglanti());
+            //Departmanlar Çekiliyor
+            SqlCommand komut1 = new SqlCommand("Select * from Cv_Departmanlar", bgl.baglanti());
             SqlDataReader dr1 = komut1.ExecuteReader();
+            int i = 0;
             while (dr1.Read())
             {
-                comboBox1.Items.Add(dr1[0]);
+                comboBox1.Items.Add(dr1[1]);
+                grafikDepartman.Series["Aranan Eleman Sayisi"].Points.Add(Convert.ToDouble(dr1[2]));
+                grafikDepartman.Series["Aranan Eleman Sayisi"].Points[i].AxisLabel = dr1[1].ToString();
+                i += 1;
             }
+
             bgl.baglanti().Close();
+
+            
 
         }
 
@@ -176,6 +187,11 @@ namespace PoldyCv
                 document.Close();
 
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
