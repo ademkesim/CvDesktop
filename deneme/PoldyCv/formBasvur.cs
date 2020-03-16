@@ -61,13 +61,20 @@ namespace PoldyCv
             
 
         }
-
+        public int a;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Unvanlar Çekiliyor
             comboBox2.Items.Clear();
-            SqlCommand komut2 = new SqlCommand("Select UnvanAd From Cv_Unvanlar Where DepartmanAd=@p3", bgl.baglanti());
-            komut2.Parameters.AddWithValue("@p3", comboBox1.Text);
+            SqlCommand komut3 = new SqlCommand("Select Departmanid From Cv_Departmanlar Where DepartmanAd=@p4", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@p4", comboBox1.Text);
+            SqlDataReader dr3 = komut3.ExecuteReader();
+            if (dr3.Read())
+            {
+                a = (int)dr3[0];
+            }
+            SqlCommand komut2 = new SqlCommand("Select UnvanAd From Cv_Unvanlar Where Departmanid=@p3", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p3", a);
             SqlDataReader dr2 = komut2.ExecuteReader();
             while (dr2.Read())
             {

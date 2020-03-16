@@ -150,7 +150,7 @@ namespace PoldyCv
         public byte[] ap;
         private void button1_Click_2(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select BasvuruPdf from Cv_Basvuru where Basvuruid=" + tasiyici, bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Select BasvuruPdf from Cv_Basvuru where Basvuruid='"+tasiyici+"'", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             
             if (dr.Read())
@@ -174,7 +174,8 @@ namespace PoldyCv
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            DepartmanEkle de = new DepartmanEkle();
+            de.Show();
         }
     }
 }

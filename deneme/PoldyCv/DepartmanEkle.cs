@@ -25,5 +25,10 @@ namespace PoldyCv
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
         }
+
+        private void DepartmanEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
