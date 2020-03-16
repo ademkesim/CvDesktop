@@ -123,6 +123,7 @@ namespace PoldyCv
 
             return text;
         }
+        public string medenidurum;
         private void btnCvIndir_Click(object sender, EventArgs e)
         {
             iTextSharp.text.Document document = new iTextSharp.text.Document();
@@ -150,6 +151,14 @@ namespace PoldyCv
                 string text = "deneme";
                 while (dr4.Read())
                 {
+                    if (dr4[5].ToString() == "False")
+                    {
+                        this.medenidurum = "Bekar";
+                    }
+                    else if (dr4[5].ToString() == "True")
+                    {
+                        this.medenidurum = "Evli";
+                    }
                     text =
                         "Kişisel Bilgiler \n" +
                         "--------------------" +
@@ -157,7 +166,7 @@ namespace PoldyCv
                         "\n Soyad : " + dr4[2] +
                         "\n Doğum Tarihi : " + dr4[3] +
                         "\n Doğum Yılı : " + dr4[4] +
-                        "\n Medeni Durum : " + dr4[5] +
+                        "\n Medeni Durum : " + this.medenidurum +
                         "\n ----------------------------------------" +
                         "\n Eğitim Bilgileri" +
                         "\n--------------------" +
